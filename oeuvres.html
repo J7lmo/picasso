@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="page">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#"><img class="logo" src="/img/71295.png"></img>Picasso</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Les oeuvres</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Apropos.html">A propos de Picasso</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./info.html">Informations pratiques</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tarifs.html">Tarifs</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+<div class="row">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0" id="image-container">
+        <a href="https://fr.wahooart.com/@@/8XYNRE-Pablo-Picasso-Femme-assise">
+      <img
+        src="img/Femme-asise.jpeg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Femme-asise"
+      />
+    </a>
+        <a href="https://fr.wikipedia.org/wiki/La_Femme_qui_pleure_(Picasso)">
+      <img
+        src="img/La-femme-qui-pleure.jpeg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="La-femme-qui-pleure"
+      />
+    </a>
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0" id="image-container">
+        <a href="https://en.wikipedia.org/wiki/Girl_before_a_Mirror">
+      <img
+        src="img/Jeune-fille-devant-un-miroir.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Jeune-fille-devant-un-miroir"
+      />
+        </a>
+        <a href="https://fr.wahooart.com/@@/8XYPB9-Pablo-Picasso-femme-fleurr">
+      <img
+        src="img/La-femme-a╠Ç-la-fleur.jpeg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="La femme a la fleur"
+      />
+    </a>
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0" id="image-container">
+        <a href="https://www.museepicassoparis.fr/fr/le-baiser-1925">
+      <img
+        src="img/Le-Baiser.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Le-Baiser"
+        >
+    </a>
+      />
+        <a href="https://en.wikipedia.org/wiki/Le_R%C3%AAve_(Picasso)"></a>
+      <img
+        src="img/Le-reve.jpg"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Le-reve"
+      />
+    </div>
+    <div class="col-lg-4 mb-4 mb-lg-0"id="image-container">
+        <a href="https://en.wikipedia.org/wiki/Woman_in_a_Red_Armchair">
+        <img
+          src="img/Nude-in-red-armchair.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Nude-in-red-armchair"
+        />
+    </a>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0"id="image-container">
+        <a href="https://fr.wikipedia.org/wiki/Le_Vieux_Guitariste_aveugle">
+        <img
+          src="img/Le-vieux-guitariste-aveugle.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Le-vieux-guitariste-aveugle"
+        />
+        </a>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0"id="image-container">
+        <a href="https://fr.wikipedia.org/wiki/Les_Demoiselles_d%27Avignon">
+        <img
+          src="img/Les-Demoiselles-d-Avignon.jpg"
+          class="w-100 shadow-1-strong rounded mb-4"
+          alt="Les-Demoiselles-d-Avignon"
+        />
+        </a>
+      </div>
+  </div>
+  <script>
+      const imageContainers = document.querySelectorAll("#image-container");
+      for (let i = imageContainers.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [imageContainers[i].innerHTML, imageContainers[j].innerHTML] = [imageContainers[j].innerHTML, imageContainers[i].innerHTML];
+      }</script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+
+</html>
